@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dash.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Siwes Hub💻</div>
+        <ul class="nav-links">
+            <li><a href="dash.html">Dashboard</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#">Students</a></li>
+            <li><a href="#">Analytics</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+        <div class="profile">
+            <img src="/profile.png" alt="Profile" class="profile-pic">
+        </div>
+    </nav>
+
+    <!-- Main Dashboard -->
+    <div class="dashboard">
+        <div class="stats">
+            <div class="stat-box">
+                <h3>Total Students</h3>
+                <p>2,247</p>
+            </div>
+            <div class="stat-box">
+                <h3>Active Centers</h3>
+                <p>15</p>
+            </div>
+        </div>
+
+        <!-- Charts Section -->
+        <div class="charts">
+            <div class="chart-box">
+                <h3>Department Distribution</h3>
+                <canvas id="departmentChart"></canvas>
+            </div>
+            <div class="chart-box">
+                <h3>Registration Trends</h3>
+                <canvas id="registrationChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Data Table -->
+        <div class="table-section">
+            <h3>Center Details</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Center Name</th>
+                        <th>Location</th>
+                        <th>Students</th>
+                        <th>Departments</th>
+                        <th>Email</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Olaktech Integrated service</td>
+                        <td>Ogun, Nigeria</td>
+                        <td>166</td>
+                        <td>Computer Science, Engineering</td>
+                        <td>Olakteck@gmail.com</td>
+                        <td class="status active">Active</td>
+                    </tr>
+                    <tr>
+                        <td>Global Manufacturing Inc</td>
+                        <td>Abuja, Nigeria</td>
+                        <td>116</td>
+                        <td>Mechanical, Industrial</td>
+                        <td>Globalman09@gmail.com</td>
+                        <td class="status active">Active</td>
+                    </tr>
+                    <tr>
+                      <td>Aptech Coding centre</td>
+                        <td>Ogun, Nigeria</td>
+                        <td>98</td>
+                        <td>Computer science</td>
+                        <td>Aptech@gmail.com</td>
+                        <td class="status active">Active</td>
+                    </tr>
+                    <tr>
+                      <td>Kdcom Computer college</td>
+                        <td>Lagos, Nigeria</td>
+                        <td>76</td>
+                        <td>Computer science/engineering</td>
+                        <td>Kdcom@gmail.com</td>
+                        <td class="status active">Active</td>
+                    </tr>
+                    <tr>
+                      <td>Joedave ICT Centre</td>
+                        <td>Ogun, Nigeria</td>
+                        <td>90</td>
+                        <td>Mechanical, Industrial</td>
+                        <td>Joedave@gmail.com</td>
+                        <td class="status active">Active</td>
+                    </tr>
+                      <td></td>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="dash.js"></script>
+</body>
+</html>
